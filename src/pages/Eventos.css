@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente general */
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.eventos-page {
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-eventos {
+  background-image: url("/src/assets/catering-don.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.hero-eventos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-overlay {
+  z-index: 2;
+  padding: 30px;
+  border-radius: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8); /* Degradado sutil */
+  border-top: 5px solid #294181; /* Línea decorativa */
+}
+
+.sobre-nosotros-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.text-content h2 {
+  font-family: 'Playfair Display', serif; /* Fuente decorativa para títulos */
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.text-content h2::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #294181; /* Línea decorativa amarilla */
+  margin: 0 auto 10px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  line-height: 1.8; /* Mejora la legibilidad */
+  color: #555; /* Gris suave */
+  text-align: center;
+}
+
+/* Galería de Imágenes */
+.eventos-imagenes {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.imagenes-masonry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.imagenes-masonry video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagenes-masonry video:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* WhatsApp Float */
+.cta-contacto {
+  background-color: #294181;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 60px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cta-contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-contacto p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.boton-wsp {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-wsp:hover {
+  background-color: #1bbf5c;
+  transform: scale(1.05);
+}
+
+.icono-wsp {
+  font-size: 1.4rem;
+}
+
+/* Flotante */
+.whatsapp-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.whatsapp-bubble a {
+  background-color: #25d366;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.whatsapp-bubble a:hover {
+  transform: scale(1.1);
+}
+
+

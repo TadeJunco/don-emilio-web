@@ -1,0 +1,219 @@
+/* --- Estilos generales (tu CSS base) --- */
+
+.sobre-nosotros-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding-bottom: 60px;
+}
+
+.sobre-hero {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(135deg, #ffffff, #f0f4ff);
+  background-image: url('/src/assets/Logo don emilio.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.sobre-hero .overlay {
+  background-color: rgba(41, 65, 129, 0.6);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  max-width: 700px;
+}
+
+.sobre-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.sobre-hero p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.sobre-texto {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.sobre-texto h2 {
+  font-size: 2rem;
+  color: #294181;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.sobre-mapa {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.sobre-mapa h3 {
+  font-size: 1.4rem;
+  color: #294181;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sobre-mapa iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón WhatsApp igual que en FoodTrack */
+
+.whatsapp-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.whatsapp-bubble a {
+  background-color: #25d366;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.whatsapp-bubble a:hover {
+  transform: scale(1.1);
+}
+
+/* --- Media Queries para Responsive --- */
+
+@media (max-width: 1024px) {
+  .sobre-hero {
+    height: 350px;
+    background-size: 150px;
+  }
+  .sobre-hero .overlay {
+    padding: 30px;
+    max-width: 90%;
+  }
+  .sobre-hero h1 {
+    font-size: 2.5rem;
+  }
+  .sobre-hero p {
+    font-size: 1.2rem;
+  }
+  .sobre-texto {
+    max-width: 90%;
+    margin: 50px auto;
+  }
+  .sobre-texto h2 {
+    font-size: 1.8rem;
+  }
+  .sobre-texto p {
+    font-size: 1rem;
+  }
+  .sobre-mapa iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-hero {
+    height: 300px;
+    background-size: 120px;
+  }
+  .sobre-hero .overlay {
+    padding: 20px;
+    max-width: 90%;
+  }
+  .sobre-hero h1 {
+    font-size: 2rem;
+  }
+  .sobre-hero p {
+    font-size: 1rem;
+  }
+  .sobre-texto h2 {
+    font-size: 1.5rem;
+  }
+  .sobre-texto p {
+    font-size: 0.95rem;
+  }
+  .sobre-mapa iframe {
+    height: 200px;
+  }
+  .whatsapp-bubble {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-bubble a {
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-hero {
+    height: 250px;
+    background-size: 100px;
+  }
+  .sobre-hero .overlay {
+    padding: 15px;
+  }
+  .sobre-hero h1 {
+    font-size: 1.6rem;
+  }
+  .sobre-hero p {
+    font-size: 0.9rem;
+  }
+  .sobre-texto h2 {
+    font-size: 1.3rem;
+  }
+  .sobre-texto p {
+    font-size: 0.85rem;
+  }
+  .sobre-mapa iframe {
+    height: 150px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+}
