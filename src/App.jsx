@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ScrollToTop from './pages/ScrollToTop';
 import './App.css';
 import Eventos from './pages/Eventos';
 import Rotiseria from './pages/Rotiseria';
@@ -7,6 +8,7 @@ import SobreNosotros from './pages/SobreNosotros';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <nav>
           <ul>
