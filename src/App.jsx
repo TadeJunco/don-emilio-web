@@ -5,6 +5,12 @@ import Eventos from './pages/Eventos';
 import Rotiseria from './pages/Rotiseria';
 import FoodTrack from './pages/Foodtrack';
 import SobreNosotros from './pages/SobreNosotros';
+
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  if (loader) loader.style.display = 'none';
+});
+
 function App() {
   return (
     <Router>
