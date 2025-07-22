@@ -6,6 +6,15 @@ import Rotiseria from './pages/Rotiseria';
 import FoodTrack from './pages/Foodtrack';
 import SobreNosotros from './pages/SobreNosotros';
 
+// IMPORTACIÓN DE ARCHIVOS (¡renombrá los archivos si hace falta!)
+import Logo from './assets/logo-don-emilio.jpg';
+import FoodtrackH from './assets/food-track-horizontal.jpg';
+import VideoPrueba from './assets/video-prueba.mp4';
+import Fiestas from './assets/fiestas.mp4';
+import Foodtrackimg from './assets/foodtrack2.jpg';
+import Rotihorizontal from './assets/rotihorizontal.jpg';
+
+// Loader al cargar la página
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
   if (loader) loader.style.display = 'none';
@@ -20,7 +29,7 @@ function App() {
           <ul>
             <li>
               <Link to="/">
-                <img src="/src/assets/Logo don emilio.jpg" alt="Logo Don Emilio" className="logo" />
+                <img src={Logo} alt="Logo Don Emilio" className="logo" />
               </Link>
             </li>
             <li><Link to="/eventos">Eventos</Link></li>
@@ -38,17 +47,17 @@ function App() {
               <div>
                 <div className="hero">
                   <div className="hero-slider">
-                    <img src="/src/assets/food track horizontal.jpg" alt="Food track" className="food-track" />
-                    <video src="/src/assets/video prueba.mp4" autoPlay muted loop></video>
-                    <video src="/src/assets/fiestas.mp4" autoPlay muted loop></video>
-                    <img src="\src\assets\food track 2 imagen .jpg" alt="Food track 2" />
-                    <img src="/src/assets/rotihorizontal.jpg" alt="Rotisería" className="rotiseria" />
+                    <img src={FoodtrackH} alt="Food track" className="food-track" />
+                    <video src={VideoPrueba} autoPlay muted loop></video>
+                    <video src={Fiestas} autoPlay muted loop></video>
+                    <img src={Foodtrackimg} alt="Food track 2" />
+                    <img src={Rotihorizontal} alt="Rotisería" className="rotiseria" />
                   </div>
                 </div>
               </div>
             }
           />
-          {/* Páginas */}
+          {/* Otras páginas */}
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/rotiseria" element={<Rotiseria />} />
           <Route path="/Food-track" element={<FoodTrack />} />

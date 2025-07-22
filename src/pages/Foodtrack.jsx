@@ -3,6 +3,9 @@ import './Foodtrack.css';
 import { FaWhatsapp } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Foodtrack1 from '../assets/food-track-horizontal.jpg';
+import Foodtrack2 from '../assets/foodtrack2.jpg';
+import VideoFood from '../assets/videofoodnew.mp4';
 
 const Foodtrack = () => {
   useEffect(() => {
@@ -26,13 +29,13 @@ const Foodtrack = () => {
       <section className="foodtrack-media" data-aos="fade-up">
         <div className="carousel-media">
           <div className="media-item">
-            <img src="/src/assets/food track horizontal.jpg" alt="Foodtrack" />
+            <img src={Foodtrack1} alt="Foodtrack" />
           </div>
           <div className="media-item">
-            <img src="/src/assets/food track 2 imagen .jpg" alt="Foodtrack" />
+            <img src={Foodtrack2} alt="Foodtrack" />
           </div>
           <div className="media-item">
-            <video src="/src/assets/videofoodnew.mp4" autoPlay muted loop />
+            <video src={VideoFood} autoPlay muted loop />
           </div>
         </div>
       </section>

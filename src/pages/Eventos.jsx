@@ -3,6 +3,8 @@ import { FaWhatsapp } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import fiestasVideo1 from '../assets/fiestas.mp4';
+import fiestasVideo2 from '../assets/fiestas-2.mp4';
 
 function Eventos() {
   useEffect(() => {
@@ -39,8 +41,8 @@ function Eventos() {
       <section className="eventos-imagenes" data-aos="fade-up">
         <h2>Sueños que son historias</h2>
         <div className="imagenes-masonry">
-          <video src="/src/assets/fiestas.mp4" autoPlay muted loop />
-          <video src="/src/assets/fiestas 2.mp4" autoPlay muted loop />
+          <video src={fiestasVideo1} autoPlay muted loop />
+          <video src={fiestasVideo2} autoPlay muted loop />
         </div>
       </section>
 

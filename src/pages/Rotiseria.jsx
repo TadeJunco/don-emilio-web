@@ -1,7 +1,10 @@
 import React from 'react';
 import './Rotiseria.css';
 import { Carousel } from 'react-responsive-carousel';
-
+import Milanesa from '../assets/milanesa.jpg';
+import Sorrentinos from '../assets/sorrentinos.jpg';
+import SandwichMila from '../assets/sandwichmila.png';
+import Pollo from '../assets/pollo.jpg';
 const Rotiseria = () => {
   const menu = {
     categories: [
@@ -71,16 +74,16 @@ const Rotiseria = () => {
           interval={3000}
         >
           <div>
-            <img src="/src/assets/milanesa.jpg" alt="Milanesa con papas" />
+            <img src={Milanesa} alt="Milanesa con papas" />
           </div>
           <div>
-            <img src="/src/assets/sorrentinos.jpg" alt="Sorrentinos caseros" />
+            <img src={Sorrentinos} alt="Sorrentinos caseros" />
           </div>
           <div>
-            <img src="/src/assets/sandwichmila.png" alt="Sandwich" />
+            <img src={SandwichMila} alt="Sandwich" />
           </div>
           <div>
-            <img src="/src/assets/pollo.jpg" alt="Pollo" />
+            <img src={Pollo} alt="Pollo" />
           </div>
         </Carousel>
       </div>
