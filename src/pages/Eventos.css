@@ -14,7 +14,7 @@ body {
 
 /* Hero Section */
 .hero-eventos {
-  background-image: url("/src/assets/catering-don.jpg");
+  background-image: url("../assets/catering-don.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,6 +133,7 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+
 .cta-contacto h2 {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -200,5 +201,32 @@ body {
 .whatsapp-bubble a:hover {
   transform: scale(1.1);
 }
+@media (max-width: 768px) {
+  .hero-eventos {
+    height: 40vh;
+    background-position: top;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.6rem;
+    color: yellow;
+  }
+
+  .cta-contacto h2 {
+    font-size: 1.4rem;
+  }
+
+  .boton-wsp {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .imagenes-masonry video {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
 
 

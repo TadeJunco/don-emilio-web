@@ -199,4 +199,93 @@ body {
   border-bottom-right-radius: 10px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .rotiseria-page {
+    padding: 20px 10px;
+    background-size: 150px; /* Reducimos el logo de fondo */
+    background-attachment: scroll; /* Para evitar problemas en móvil */
+  }
+
+  .rotiseria-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .menu-categories {
+    grid-template-columns: 1fr; /* Una columna para que quede apilado */
+    gap: 15px;
+  }
+
+  .menu-category {
+    padding: 15px;
+  }
+
+  .menu-category-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .menu-item {
+    font-size: 0.9rem;
+  }
+
+  .delivery-section {
+    margin-top: 30px;
+    padding: 15px;
+  }
+
+  .delivery-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .delivery-phone,
+  .delivery-address {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-order {
+    margin-top: 1.5rem;
+  }
+
+  .whatsapp-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .cta-contacto {
+    padding: 20px 10px;
+  }
+
+  .cta-contacto h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-contacto p {
+    font-size: 1rem;
+  }
+
+  .boton-wsp {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .icono-wsp {
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+
+  .carrusel-platos {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .carrusel-platos img {
+    height: 300px; /* Reducir altura para móviles */
+  }
+
+  .carrusel-platos .legend {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+}
 

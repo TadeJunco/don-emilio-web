@@ -127,6 +127,35 @@ nav ul li a:hover {
   }
 }
 
+/* Responsive - Móviles hasta 768px */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  nav {
+    padding: 0.5em 1em;
+  }
+
+  .hero {
+    height: 60vh; /* Más chico para pantallas móviles */
+  }
+
+  .hero-slider img,
+  .hero-slider video {
+    object-fit: cover; /* Mejora visual en móvil */
+  }
+}
+
 
 
 
